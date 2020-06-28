@@ -1,0 +1,29 @@
+
+
+PROCEDURE dot_product(v1 , v2)
+VAR
+    i  : INTEGER;
+    ps:FLOAT;
+BEGIN
+    FOR i FROM 0 TO v1.length-1 STEP 1  DO
+        ps:=v1[i]*v2[i] + ps
+    END_FOR
+END
+ALGORITHM algorithm_name
+VAR
+    v1 , v2  : ARRAY_OF FLOAT[2];
+    j,i,n:INTEGER;
+    str :STRING:='';
+    V : ARRAY_OF : ARRAY_OF FLOAT[2];[n];
+BEGIN
+    read(n);
+    FOR i FROM 0 TO V.length-1 STEP 1  DO
+    FOR j FROM 0 TO V.length-1 STEP step  DO
+        IF (dot_product(V[i],V[j]==0)) THEN
+            str:='orthogonal';
+        END_IF
+    END_FOR
+        
+    END_FOR
+    
+END
